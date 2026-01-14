@@ -51,13 +51,27 @@ console.log(`Your tdee is, ${tdee}`);
 
 
 // BMI Category 
+
  let bmiCategory;
+
  if( bmi < 18.5) {
     bmiCategory = "Underweight";
  } else if ( bmi >= 18.5 && bmi < 24.9){
     bmiCategory = "Normal weight";
  } else if ( bmi >= 25 && bmi <= 30){
     bmiCategory = "Overweight";
- } else {
+ } 
+ else {
     bmiCategory = "Obese";
  }
+
+console.log(bmiCategory);
+
+
+// Calories for Goals 
+
+const loseWeight = tdee - 500;
+const gainWeight = tdee + 500;
+
+clg(`To lose weight, you should consume around ${loreWeight} calories per day.`);
+clg(`To gain weight, you should consume around ${gainWeight} calories per day.`);
