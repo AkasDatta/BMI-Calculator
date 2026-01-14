@@ -90,3 +90,23 @@ console.log(`BMR (resting calories): ${bmr.toFixed(0)} cal/day`);
 console.log(`TDEE (maintenance calories): ${tdee.toFixed(0)} cal/day`);
 console.log(`Calories to Lose Weight: ${loseWeight.toFixed(0)} cal/day`);
 console.log(`Calories to Gain Weight: ${gainWeight.toFixed(0)} cal/day`);
+
+
+alert(
+    // --- Output ---
+`=== BMI & Calorie Calculator ===
+Weight: ${weight} kg
+Height: ${height} m
+Age: ${age}
+Gender: ${gender}
+Activity Level: ${activity}
+
+
+"-------------------------------"
+
+BMI: ${bmi.toFixed(2)} (${bmiCategory})
+BMR (resting calories): ${bmr.toFixed(0)} cal/day
+TDEE (maintenance calories): ${tdee.toFixed(0)} cal/day
+Calories to Lose Weight: ${loseWeight.toFixed(0)} cal/day
+Calories to Gain Weight: ${gainWeight.toFixed(0)} cal/day `
+)
