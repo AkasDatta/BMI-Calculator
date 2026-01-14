@@ -42,3 +42,5 @@ if(activity === "sedentary"){
     activityMultiplier = 1.2;
 }
 
+let tdee = bmr * activityMultiplier;
+console.log(`Your tdee is, ${tdee}`);
