@@ -56,4 +56,8 @@ console.log(`Your tdee is, ${tdee}`);
     bmiCategory = "Underweight";
  } else if ( bmi >= 18.5 && bmi < 24.9){
     bmiCategory = "Normal weight";
+ } else if ( bmi >= 25 && bmi <= 30){
+    bmiCategory = "Overweight";
+ } else {
+    bmiCategory = "Obese";
  }
