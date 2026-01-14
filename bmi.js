@@ -73,5 +73,20 @@ console.log(bmiCategory);
 const loseWeight = tdee - 500;
 const gainWeight = tdee + 500;
 
-clg(`To lose weight, you should consume around ${loreWeight} calories per day.`);
-clg(`To gain weight, you should consume around ${gainWeight} calories per day.`);
+console.log(`To lose weight, you should consume around ${loseWeight} calories per day.`);
+console.log(`To gain weight, you should consume around ${gainWeight} calories per day.`);
+
+
+// --- Output ---
+console.log("=== BMI & Calorie Calculator ===");
+console.log(`Weight: ${weight} kg`);
+console.log(`Height: ${height} m`);
+console.log(`Age: ${age}`);
+console.log(`Gender: ${gender}`);
+console.log(`Activity Level: ${activity}`);
+console.log("-------------------------------");
+console.log(`BMI: ${bmi.toFixed(2)} (${bmiCategory})`);
+console.log(`BMR (resting calories): ${bmr.toFixed(0)} cal/day`);
+console.log(`TDEE (maintenance calories): ${tdee.toFixed(0)} cal/day`);
+console.log(`Calories to Lose Weight: ${loseWeight.toFixed(0)} cal/day`);
+console.log(`Calories to Gain Weight: ${gainWeight.toFixed(0)} cal/day`);
