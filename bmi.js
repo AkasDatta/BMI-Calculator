@@ -6,12 +6,14 @@ const activity = parseFloat(prompt("Enter your activity level (sedentary, light,
 
 
 // Now BMI calculation
+
 const bmi = weight / (height * height);
 console.log(`Your BMI is: ${bmi}`);
 
 
 
 // BMR Calculation 
+
 let bmr;
 
 if( gender === "male"){
@@ -23,10 +25,12 @@ else {
 console.log(`Your BMR is: ${bmr}`);
 
 
+
+
 // Total Daily Energy Expenditure(TDEE) Calculation
 
-
 let activityMultiplier;
+
 if(activity === "sedentary"){
     activityMultiplier = 1.2; 
 } else if(activity === "light"){
@@ -44,3 +48,12 @@ if(activity === "sedentary"){
 
 let tdee = bmr * activityMultiplier;
 console.log(`Your tdee is, ${tdee}`);
+
+
+// BMI Category 
+ let bmiCategory;
+ if( bmi < 18.5) {
+    bmiCategory = "Underweight";
+ } else if ( bmi >= 18.5 && bmi < 24.9){
+    bmiCategory = "Normal weight";
+ }
