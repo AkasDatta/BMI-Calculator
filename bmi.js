@@ -21,3 +21,24 @@ else {
     bmr = 10 * weight + 6.25 * (height * 100) - 5 * age - 161;
 }
 console.log(`Your BMR is: ${bmr}`);
+
+
+// Total Daily Energy Expenditure(TDEE) Calculation
+
+
+let activityMultiplier;
+if(activity === "sedentary"){
+    activityMultiplier = 1.2; 
+} else if(activity === "light"){
+    actvemultipier = 1.375;
+} else if(activity === "moderate"){
+    activeMultipier = 1.55;
+} else if(activity === "active"){
+    activityMultipier = 1.725;
+} else if(activity === "very-active"){
+    activityMultipier = 1.9;
+} else {
+    console.log("Invalid activity level, we default to it little(1.2).");
+    activityMultiplier = 1.2;
+}
+
